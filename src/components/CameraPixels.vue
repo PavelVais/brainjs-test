@@ -1,10 +1,10 @@
 <template>
     <div class="container mx-auto max-width">
         <div class="grid grid-cols-2 gap-1 px-10 ">
-            <div class="pixel rounded-tl-lg" :style="{'backgroundColor':this.colors[0]}">ahoj</div>
-            <div class="pixel rounded-tr-lg" :style="{'backgroundColor':this.colors[1]}">ahoj</div>
-            <div class="pixel rounded-bl-lg" :style="{'backgroundColor':this.colors[2]}">ahoj</div>
-            <div class="pixel rounded-br-lg" :style="{'backgroundColor':this.colors[3]}">ahoj</div>
+            <div class="pixel rounded-tl-lg" :style="{'backgroundColor':this.colors[0]}">{{this.colors[0]}}</div>
+            <div class="pixel rounded-tr-lg" :style="{'backgroundColor':this.colors[1]}">{{this.colors[1]}}</div>
+            <div class="pixel rounded-bl-lg" :style="{'backgroundColor':this.colors[2]}">{{this.colors[2]}}</div>
+            <div class="pixel rounded-br-lg" :style="{'backgroundColor':this.colors[3]}">{{this.colors[3] }}</div>
         </div>
         <button
             v-on:click="shuffleColors()"
